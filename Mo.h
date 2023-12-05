@@ -1,4 +1,5 @@
 struct Query{
+    const BLOCK = 320;
     int l, r, id;
     Query(int l = 0, int r = 0, int id = 0) :
         l(l), r(r), id(id) {}
