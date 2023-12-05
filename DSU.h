@@ -1,3 +1,9 @@
+struct Edge{
+    int u, v, w;
+    bool operator < (const Edge &other) const{
+        return w < other.w;
+    }
+};
 struct DSU{
     vector<int> sz, par;
     int n;
