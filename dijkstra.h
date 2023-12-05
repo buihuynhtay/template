@@ -1,4 +1,4 @@
-void dijkstra(int s, vector<int> &minDist){
+void dijkstra(int s, vector<ll> &minDist){
     minDist.resize(n + 1, 1e18 + 7);
     priority_queue<pll, vector<pll>, greater<pll>> pq;
     minDist[s] = 0;
