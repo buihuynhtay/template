@@ -1,16 +1,16 @@
+struct Node{
+    int val, lz;
+    Node(int _val = 0, int _lz = 0){
+        val = _val;
+        lz = _lz;
+    }
+    Node operator + (const Node &other) const{
+        Node res = Node();
+        res.val = val + other.val;
+        return res;
+    }
+};
 struct SegmentTree{
-    struct Node{
-        int val, lz;
-        Node(int _val = 0, int _lz = 0){
-            val = _val;
-            lz = _lz;
-        }
-        bool operator + (const Node &other) const{
-            Node res = Node();
-            res.val = val + other.val;
-            return res;
-        }
-    };
     int n;
     vector<Node> st;
 
