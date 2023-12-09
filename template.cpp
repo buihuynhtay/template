@@ -104,15 +104,15 @@ signed main(){
 
     #define task ""
     if(fopen(task".inp", "r")){
-		freopen(task".inp", "r", stdin);
-		freopen(task".out", "w", stdout);
-	}
+	freopen(task".inp", "r", stdin);
+	freopen(task".out", "w", stdout);
+    }
 
-	#define task "test"
+    #define task "test"
     if(fopen(task".inp", "r")){
-		freopen(task".inp", "r", stdin);
+	freopen(task".inp", "r", stdin);
         freopen(task".out", "w", stdout);
-	}
+    }
 
     int test = 1;
     bool multitest = 1;
