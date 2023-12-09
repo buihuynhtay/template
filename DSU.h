@@ -16,7 +16,7 @@ struct DSU{
         }
     }
 
-    int root(int par){
+    int root(int u){
         return par[u] ? par[u] = root(par[u]) : u;
     }
 
