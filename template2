@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+
+#define fi first 
+#define se second 
+#define pb push_back
+#define mp make_pair
+#define MASK(x) (1LL << (x)) 
+#define BIT(mask, x) (((mask) >> (x)) & 1LL)
+#define Size(x) ((int)(x).size())
+#define all(x) (x).begin(), (x).end() 
+#define file(task) if(fopen(task".inp", "r")) { freopen(task".inp", "r", stdin); freopen(task".out", "w", stdout); }
+
+using namespace std;
+using ll = long long;
+using pll = pair<long long, long long>;
+using pii = pair<int, int>;
+
+template<class X, class Y> bool Min(X &x, const Y &y){if (x > y){ x = y; return true;} return false;}
+template<class X, class Y> bool Max(X &x, const Y &y){if (x < y){ x = y; return true;} return false;}
+
+const ll mod = 1e9 + 7;
+
+template<class X, class Y> void add(X &x, const Y &y) { x = (x + y); if(x >= mod) x -= mod; }
+template<class X, class Y> void sub(X &x, const Y &y) { x = (x - y); if(x < 0) x += mod; }
+
+const int inf = 1e9 + 7;   
+const int N = 1e6 + 7;
+/* Author : Bui Huynh Tay */
+
+int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    file("file");
+
+    int x;
+    cin >> x;
+    cout << x << '\n';
+    return 0;
+}
